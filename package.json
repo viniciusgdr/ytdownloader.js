@@ -1,0 +1,31 @@
+{
+  "name": "yi1s-downloader",
+  "version": "1.0.0",
+  "description": "A Youtube Downloader for Provider Yt1s",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusgdr/yt1s-downloader.git"
+  },
+  "keywords": [
+    "youtube",
+    "downloader"
+  ],
+  "author": "viniciusgdr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viniciusgdr/yt1s-downloader/issues"
+  },
+  "homepage": "https://github.com/viniciusgdr/yt1s-downloader#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/request": "^2.48.8",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
