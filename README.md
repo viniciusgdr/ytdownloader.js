@@ -1,4 +1,4 @@
-# yt1s-downloader
+# ytdownloader.js
 Youtube Downloader - https://yt1s.io
 
 Importing the Module (TS)
