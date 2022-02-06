@@ -9,15 +9,14 @@ export function ytsearch(search: string, headers: IHeaders): Promise<IYtSearch[]
             headers: headers.ytis,
             form: { 'q': search, 'vt': 'home' }
         }, function (error, response, body) {
-            const bodyer = JSON.parse(body)
+            const parsed = JSON.parse(body)
             const searchers = []
-            for (let i = 0; i < bodyer.items.length; i++) {
+            for (let i = 0; i < parsed.items.length; i++) {
                 searchers.push({
-                    url: 'https://www.youtube.com/watch?v=' + bodyer.items[i].v,
-                    title: bodyer.items[i].t
+                    url: 'https://www.youtube.com/watch?v=' + parsed.items[i].v,
+                    title: parsed.items[i].t
                 })
             }
-            console.log(searchers)
             resolve(searchers)
         })
     })
