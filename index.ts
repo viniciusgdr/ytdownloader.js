@@ -41,13 +41,13 @@ export default class Youtube {
             }
         }
     }
-    public ytsearch(search: string): Promise<IYtSearch[]> {
-        return ytsearch(search, this.headers())
+    public async ytsearch(search: string): Promise<IYtSearch[]> {
+        return await ytsearch(search, this.headers())
     }
     public async ytmp3(search: string, needSearch: boolean): Promise<IYtResult> {
-        return yta(search, needSearch, this.headers())
+        return await yta(search, needSearch, this.headers())
     }
     public async ytmp4(search: string, needSearch: boolean): Promise<IYtResult> {
-        return ytv(search, needSearch, this.headers())
+        return await ytv(search, needSearch, this.headers())
     }
 };
