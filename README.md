@@ -11,7 +11,7 @@ const Youtube = require('ytdownloader.js')
 ```
 Search Videos
 ```ts
-new Youtube().ytsearch("LSD - Genius")
+await new Youtube().ytsearch("LSD - Genius")
 ```
 
 
@@ -20,18 +20,18 @@ new Youtube().ytsearch("LSD - Genius")
 Search and Downloading Videos
 ```ts
 // MP3
-new Youtube().ytmp3("LSD - Genius", true)
+await new Youtube().ytmp3("LSD - Genius", true)
 
 // MP4
-new Youtube().ytmp4("LSD - Genius", true)
+await new Youtube().ytmp4("LSD - Genius", true)
 ```
 Download via URL
 ```ts
 // MP3
-new Youtube().ytmp3("https://www.youtube.com/watch?v=iX66G5DzIQ4", false)
+await new Youtube().ytmp3("https://www.youtube.com/watch?v=iX66G5DzIQ4", false)
 
 // MP4
-new Youtube().ytmp4("https://www.youtube.com/watch?v=iX66G5DzIQ4", false)
+await new Youtube().ytmp4("https://www.youtube.com/watch?v=iX66G5DzIQ4", false)
 ```
 Response:
 ```
