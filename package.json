@@ -4,7 +4,8 @@
   "description": "A Youtube Downloader for Provider Yt1s",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "example": "ts-node Example/example.ts",
+    "test": "ts-node Example/example.ts"
   },
   "repository": {
     "type": "git",
