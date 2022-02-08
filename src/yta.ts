@@ -1,10 +1,12 @@
 import request from "request"
-import Youtube, { IHeaders, IYtResult } from ".."
+import { IHeaders, IYtResult, Youtube } from ".."
 
 export async function yta(url: string, needSearch: boolean, headers: IHeaders): Promise<IYtResult> {
     return new Promise(async (resolve, reject) => {
-    const search = await new Youtube().ytsearch(url)
-      if (needSearch) url = search[0].url
+      if (needSearch) {
+        const search = await new Youtube().ytsearch(url)
+        url = search[0].url
+      }
       request({
         url: 'https://yt1s.io/api/ajaxSearch',
         method: 'POST',
