@@ -1,3 +1,4 @@
+import request from "request"
 import { yta } from "./src/yta"
 import { ytsearch } from "./src/ytsearch"
 import { ytv } from "./src/ytv"
@@ -27,7 +28,7 @@ export interface IYtSearch {
     url: string;
     title: string;
 }
-export default class Youtube {
+export class Youtube {
     private headers(): IHeaders {
         return {
             ytis: {
