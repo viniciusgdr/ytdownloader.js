@@ -1,4 +1,3 @@
-import request from "request"
 import { yta } from "./src/yta"
 import { ytsearch } from "./src/ytsearch"
 import { ytv } from "./src/ytv"
